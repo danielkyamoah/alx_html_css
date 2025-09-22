@@ -18,3 +18,9 @@ aside{
 	flex: 1;
 	overflow-y: auto;
 }
+
+.logo {
+    font-size: 2rem; /* Make the logo bigger */
+    color: #ff6347; /* Add a standout color (e.g., tomato) */
+    margin-right: 10px; /* Add spacing between the logo and other items */
+}
