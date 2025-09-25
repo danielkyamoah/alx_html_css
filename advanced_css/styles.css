@@ -152,3 +152,53 @@ h1 {
 .testimonials-content {
   flex: 1;
 }
+
+
+.popular-tutorials {
+  padding: 50px;
+  text-align: center;
+  background: #fff;
+  color: #000;
+}
+
+.popular-tutorials h2 {
+  margin-bottom: 40px;
+  font-size: 2rem;
+}
+
+.tutorial-cont {
+  display: flex;
+  justify-content: space-between; /* spreads them evenly */
+  gap: 20px; /* spacing between items */
+  flex-wrap: wrap; /* allows wrapping on small screens */
+}
+
+.tutorial-cont > div {
+  background: #fff;
+  color: #000;
+  border-radius: 10px;
+  padding: 20px;
+  flex: 1 1 calc(25% - 20px); /* 4 per row, minus gaps */
+  box-sizing: border-box;
+  text-align: left;
+}
+
+.tutorial-cont img {
+  max-width: 100%;
+  border-radius: 8px;
+  margin-bottom: 10px;
+}
+
+.tutorial-cont h3 {
+  font-size: 1.2rem;
+  margin: 10px 0;
+}
+
+.tutorial-cont p {
+  font-size: 0.9rem;
+  margin: 5px 0;
+}
+
+.tutorial-cont i {
+  color: gold;
+}
