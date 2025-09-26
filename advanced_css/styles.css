@@ -16,12 +16,11 @@ body {
 .hero-section {
   background: url(./src_folder/Object.png) no-repeat center center/cover;
   width: 100%;
-  min-height: 100vh; /* fills viewport */
+  min-height: 100vh; 
   display: flex;
   flex-direction: column;
 }
 
-/* NAVIGATION */
 .nav-logo {
   margin-left: 60px;
   margin-top: 20px;
@@ -51,7 +50,6 @@ nav li {
   list-style: none;
 }
 
-/* HERO MAIN CONTENT */
 main {
   text-align: center;
 }
@@ -116,7 +114,7 @@ h1 {
   justify-content: space-around;
   align-items: center;
   gap: 5rem;
-  margin-bottom: 20px; /* reduced from 100px */
+  margin-bottom: 20px; 
 }
 
 .pro-info {
@@ -134,7 +132,6 @@ h1 {
   font-weight: lighter;
 }
 
-/* TESTIMONIALS */
 .testimonials {
   background-color: #C271FF;
   width: 100%;
@@ -168,9 +165,9 @@ h1 {
 
 .tutorial-cont {
   display: flex;
-  justify-content: space-between; /* spreads them evenly */
-  gap: 20px; /* spacing between items */
-  flex-wrap: wrap; /* allows wrapping on small screens */
+  justify-content: space-between; 
+  gap: 20px; 
+  flex-wrap: wrap; 
 }
 
 .tutorial-cont > div {
@@ -178,7 +175,7 @@ h1 {
   color: #000;
   border-radius: 10px;
   padding: 20px;
-  flex: 1 1 calc(25% - 20px); /* 4 per row, minus gaps */
+  flex: 1 1 calc(25% - 20px); 
   box-sizing: border-box;
   text-align: left;
 }
@@ -201,4 +198,102 @@ h1 {
 
 .tutorial-cont i {
   color: gold;
+}
+
+.free-membership-content {
+    display: flex;
+    flex-direction: column; 
+    align-items: center; 
+    width: 100%; 
+    padding: 20px;
+}
+
+
+.free-membership-content h2 {
+    width: 100%; 
+    text-align: center;
+    margin-bottom: 25px; 
+}
+.free-membership-content {
+    background-color: #071629;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); 
+    grid-template-rows: auto auto auto; 
+    gap: 15px; 
+    width: 100%;
+    
+    grid-template-areas: 
+        "title title title title"
+        "feature1 feature2 feature3 feature4"
+        "cta cta cta cta";
+}
+
+/* 1. Place the Title */
+.free-membership-content h2 {
+    grid-area: title;
+    margin-bottom: 25px;
+    text-align: center;
+}
+
+
+.free-membership-content > div {
+    text-align: center;
+    padding: 10px;
+}
+
+.free-membership-content button {
+    grid-area: cta;
+    justify-self: center; 
+    padding: 10px 20px;
+    border: 1px solid black;
+    margin-top: 40px; 
+    cursor: pointer;
+    background-color: #C271FF;
+    border-radius: 50px;
+}
+
+.free-membership-title{
+  color: #C271FF;
+}
+
+
+.faq-content {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 40px 20px;
+  text-align: center;
+  background-color: #fff;
+  color: black;
+}
+
+.faq-title {
+  font-size: 2.5em;
+  font-weight: bold;
+  margin-bottom: 40px;
+}
+
+.faq-content > div {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 20px;
+  margin-bottom: 20px;
+}
+
+.faq-content > div > div {
+  flex: 1 1 45%;
+  min-width: 300px;
+  text-align: left;
+  padding: 20px;
+  border-radius: 8px;
+}
+
+.faq-content h3 {
+  font-size: 1.2em;
+  margin-top: 0;
+}
+
+.faq-content p {
+  font-size: 1em;
+  line-height: 1.6;
 }
