@@ -297,3 +297,15 @@ h1 {
   font-size: 1em;
   line-height: 1.6;
 }
+
+footer{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  height: 249px;
+}
+
+footer section {
+  display: flex;
+  flex-direction: row;
+}
