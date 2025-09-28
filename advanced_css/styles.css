@@ -1,0 +1,311 @@
+/* RESET */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  color: white;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 
+               'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  background-color: #000; /* fallback if bg image fails */
+}
+
+/* HERO SECTION */
+.hero-section {
+  background: url(./src_folder/Object.png) no-repeat center center/cover;
+  width: 100%;
+  min-height: 100vh; 
+  display: flex;
+  flex-direction: column;
+}
+
+.nav-logo {
+  margin-left: 60px;
+  margin-top: 20px;
+  width: 167px;
+  height: auto;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+nav ul {
+  display: flex;
+  gap: 30px;
+  margin-right: 250px;
+}
+
+nav a {
+  text-decoration: none;
+  color: white;
+  font-size: small;
+}
+
+nav li {
+  list-style: none;
+}
+
+main {
+  text-align: center;
+}
+
+h1 {
+  font-weight: bold;
+  font-size: 120px;
+  color: white;
+  margin: 20px 0;
+}
+
+.line {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 15px; 
+  color: white;
+}
+
+.line span {
+  margin: 0 10px;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.text-row {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+.line button {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 25px;
+  background: #C271FF;
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.highlight {
+  color: #C271FF;
+}
+
+/* PROS SECTION */
+.pros {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+  margin-top: 50px; /* reduced from 150px */
+}
+
+.learn-from-pros {
+  margin-bottom: 30px; /* reduced */
+}
+
+.pro-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  gap: 5rem;
+  margin-bottom: 20px; 
+}
+
+.pro-info {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+
+.pro-img {
+  border-radius: 100px;
+}
+
+.pro-year {
+  font-style: italic;
+  font-weight: lighter;
+}
+
+.testimonials {
+  background-color: #C271FF;
+  width: 100%;
+  min-height: 350px;
+  padding: 50px;
+  display: flex;
+  align-items: center;
+}
+
+.testimonials-img {
+  margin-right: 20px;
+  border-radius: 50%;
+}
+
+.testimonials-content {
+  flex: 1;
+}
+
+
+.popular-tutorials {
+  padding: 50px;
+  text-align: center;
+  background: #fff;
+  color: #000;
+}
+
+.popular-tutorials h2 {
+  margin-bottom: 40px;
+  font-size: 2rem;
+}
+
+.tutorial-cont {
+  display: flex;
+  justify-content: space-between; 
+  gap: 20px; 
+  flex-wrap: wrap; 
+}
+
+.tutorial-cont > div {
+  background: #fff;
+  color: #000;
+  border-radius: 10px;
+  padding: 20px;
+  flex: 1 1 calc(25% - 20px); 
+  box-sizing: border-box;
+  text-align: left;
+}
+
+.tutorial-cont img {
+  max-width: 100%;
+  border-radius: 8px;
+  margin-bottom: 10px;
+}
+
+.tutorial-cont h3 {
+  font-size: 1.2rem;
+  margin: 10px 0;
+}
+
+.tutorial-cont p {
+  font-size: 0.9rem;
+  margin: 5px 0;
+}
+
+.tutorial-cont i {
+  color: gold;
+}
+
+.free-membership-content {
+    display: flex;
+    flex-direction: column; 
+    align-items: center; 
+    width: 100%; 
+    padding: 20px;
+}
+
+
+.free-membership-content h2 {
+    width: 100%; 
+    text-align: center;
+    margin-bottom: 25px; 
+}
+.free-membership-content {
+    background-color: #071629;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); 
+    grid-template-rows: auto auto auto; 
+    gap: 15px; 
+    width: 100%;
+    
+    grid-template-areas: 
+        "title title title title"
+        "feature1 feature2 feature3 feature4"
+        "cta cta cta cta";
+}
+
+/* 1. Place the Title */
+.free-membership-content h2 {
+    grid-area: title;
+    margin-bottom: 25px;
+    text-align: center;
+}
+
+
+.free-membership-content > div {
+    text-align: center;
+    padding: 10px;
+}
+
+.free-membership-content button {
+    grid-area: cta;
+    justify-self: center; 
+    padding: 10px 20px;
+    border: 1px solid black;
+    margin-top: 40px; 
+    cursor: pointer;
+    background-color: #C271FF;
+    border-radius: 50px;
+}
+
+.free-membership-title{
+  color: #C271FF;
+}
+
+
+.faq-content {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 40px 20px;
+  text-align: center;
+  background-color: #fff;
+  color: black;
+}
+
+.faq-title {
+  font-size: 2.5em;
+  font-weight: bold;
+  margin-bottom: 40px;
+}
+
+.faq-content > div {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 20px;
+  margin-bottom: 20px;
+}
+
+.faq-content > div > div {
+  flex: 1 1 45%;
+  min-width: 300px;
+  text-align: left;
+  padding: 20px;
+  border-radius: 8px;
+}
+
+.faq-content h3 {
+  font-size: 1.2em;
+  margin-top: 0;
+}
+
+.faq-content p {
+  font-size: 1em;
+  line-height: 1.6;
+}
+
+footer{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  height: 249px;
+}
+
+footer section {
+  display: flex;
+  flex-direction: row;
+}
