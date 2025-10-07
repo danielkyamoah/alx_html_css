@@ -1,1 +1,11 @@
-g
+*,
+*::after 
+*::before {
+    margin: 0;
+}
+
+:root {
+    --primary-color: #071629;
+    --secondary-color: #FF6565;
+    --nwhite-color: #ffff;
+}
