@@ -56,6 +56,10 @@ body {
   font-weight: 600;
 }
 
+.nav-bar li a:hover{
+  color: var(--secondary-brand-color);
+}
+
 .hamburger-btn {
   background-color: transparent;
   border: none;
